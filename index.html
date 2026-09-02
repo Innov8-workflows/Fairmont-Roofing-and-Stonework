@@ -436,20 +436,24 @@
 
 <!-- ================= AREAS ================= -->
 <section class="sec areas s-brand" id="areas">
+  <!-- Section photograph behind the areas band. The url is INLINE on the element,
+       not routed through a CSS custom property in the stylesheet: a relative url()
+       in an external sheet resolves against the sheet's folder rather than the page
+       and silently 404s, which reads as an overlay that is simply too dark.
+       .areas-scrim is a separate layer so the darkening stays direction-owned. -->
+  <div class="areas-bg" style="background-image:url('/Fairmont-Roofing-and-Stonework/assets/areas-bg.jpg')" role="img" aria-label="Freshly laid terracotta pantile roof completed by Fairmont Roofing and Stonework"></div>
+  <div class="areas-scrim"></div>
   <div class="wrap">
     <div class="area-wrap">
       <div class="rv">
         <span class="eyebrow">Where we work</span>
-        <h2 class="title">London and Surrey and the surrounding areas</h2>
-        <p class="lede">Based in London and Surrey and working across the surrounding towns and villages. If you are just outside the area listed it is still worth asking.</p>
+        <h2 class="title">Across London, Surrey and the towns between</h2>
+        <p class="lede">Based in Iver and working across west London, Surrey and the Thames Valley. If you are just outside the towns listed it is still worth asking.</p>
         <div class="hero-btns" style="justify-content:flex-start;margin-top:24px">
-          <a class="btn btn-primary" href="#contact">Check your postcode</a>
+          <a class="btn btn-primary" href="/Fairmont-Roofing-and-Stonework/areas-we-cover/">See the areas we cover</a>
         </div>
       </div>
-      <div class="chips rv">
-        <span class="chip core"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>London and Surrey</span>
-        <span class="chip"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Surrey</span>
-      </div>
+      <div class="chips rv"><a class="chip core" href="/Fairmont-Roofing-and-Stonework/roofers-in-iver/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Iver</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/roofers-in-slough/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Slough</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/roofers-in-denham/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Denham</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/roofers-in-gerrards-cross/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Gerrards Cross</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/roofers-in-burnham/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Burnham</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/roofers-in-windsor/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Windsor</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/roofers-in-maidenhead/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Maidenhead</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/roofers-in-uxbridge/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Uxbridge</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/roofers-in-west-drayton/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>West Drayton</a><a class="chip" href="/Fairmont-Roofing-and-Stonework/areas-we-cover/"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>and 18 more</a></div>
     </div>
   </div>
 </section>

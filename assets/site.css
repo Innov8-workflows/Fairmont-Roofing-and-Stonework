@@ -53,7 +53,7 @@
   /* The areas band scrim. Sits over .areas-bg, the section photograph, so every
      layer stays translucent. The geometry matches the band gradient the section
      used before it carried a picture, so the look is continuous. */
-  --areas-scrim:radial-gradient(72% 100% at 10% 50%,rgba(var(--brand-rgb),.34),transparent 62%),radial-gradient(72% 100% at 92% 42%,rgba(var(--brand2-rgb),.26),transparent 60%),linear-gradient(115deg,rgba(var(--ink-rgb),.90) 0%,rgba(var(--ink-deep-rgb),.74) 50%,rgba(var(--ink-rgb),.82) 100%);
+  --areas-scrim:radial-gradient(72% 100% at 10% 50%,rgba(var(--brand-rgb),.30),transparent 62%),radial-gradient(72% 100% at 92% 42%,rgba(var(--brand2-rgb),.22),transparent 60%),linear-gradient(115deg,rgba(var(--ink-rgb),.94) 0%,rgba(var(--ink-deep-rgb),.86) 50%,rgba(var(--ink-rgb),.91) 100%);
   /* Stacked below 860px the copy runs the full width, so darken evenly. */
   --areas-scrim-sm:radial-gradient(90% 60% at 20% 20%,rgba(var(--brand-rgb),.30),transparent 64%),linear-gradient(180deg,rgba(var(--ink-rgb),.90) 0%,rgba(var(--ink-deep-rgb),.84) 58%,rgba(var(--ink-rgb),.88) 100%);
   --cta-scrim:linear-gradient(135deg,rgba(var(--brand-rgb),.55),rgba(var(--ink-rgb),.68) 52%,rgba(var(--brand2-rgb),.5)),rgba(var(--ink-rgb),.34);
