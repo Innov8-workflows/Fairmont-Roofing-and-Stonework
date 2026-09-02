@@ -1,9 +1,18 @@
 # Fairmont Roofing and Stonework
 
-Demo site. Single self-contained `index.html` with every image and video base64 embedded.
+**Staging preview of the full site build-out.** 52 pages.
 
-**Never hand-edit `index.html`.** It is a build artefact. The source lives in the monorepo at
-`Claude v4/Fairmont Roofing & Stonework` - edit `site.config.js` or `_src/*`, run
-`node build.js`, then copy the rebuilt `index.html` here and push.
+Served from a GitHub Pages project subfolder, so this build carries
+`noindex,nofollow` on every page and a `robots.txt` that disallows everything -
+a preview must never compete with the client's live WordPress site in search.
 
-Built with the innov8 site-kit, direction `contractor-bold`.
+**Never hand-edit anything here.** This folder is build output. The source lives in
+the monorepo at `Claude v4/Fairmont Roofing & Stonework`:
+
+```
+node generate.js                                        -> _site/     (production, base /)
+STAGING_BASE=Fairmont-Roofing-and-Stonework node generate.js -> _staging/ (this)
+```
+
+URLs mirror the live WordPress site at fairmontroofingandstonework.co.uk so nothing
+that currently ranks 404s at switchover.
